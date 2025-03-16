@@ -59,11 +59,11 @@ export default function PortfolioV2() {
   }, [])
 
   const navItems = [
-    { id: "home", label: "Inicio", icon: <Code size={18} /> },
-    { id: "about", label: "Sobre mí", icon: <User size={18} /> },
-    { id: "projects", label: "Proyectos", icon: <Briefcase size={18} /> },
-    { id: "education", label: "Educación", icon: <GraduationCap size={18} /> },
-    { id: "contact", label: "Contacto", icon: <Mail size={18} /> },
+    { id: "home", label: "Home", icon: <Code size={18} /> },
+    { id: "about", label: "About", icon: <User size={18} /> },
+    { id: "projects", label: "Projects", icon: <Briefcase size={18} /> },
+    { id: "education", label: "Education", icon: <GraduationCap size={18} /> },
+    { id: "contact", label: "Contact", icon: <Mail size={18} /> },
   ]
 
   const skills = [
@@ -74,50 +74,136 @@ export default function PortfolioV2() {
 
   const projects = [
     {
-      title: "E-commerce App",
-      description: "Una aplicación de comercio electrónico con carrito de compras y pasarela de pago.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      title: "Management Dashboard",
+      description: "a collaborative MERN-stack single-page application designed to address real-world problems by providing a user-focused platform for task management and forum discussions.",
+      technologies: ["React", "Node.js", "MongoDB", "GrapQL"],
+      image: "/Screenshot 2023-10-30 230129.png?height=200&width=350",
+      github: "https://github.com/Ruihang2017/ManagementDashboardV3",
+      demo: "https://management-dashboard-3-10095453001b.herokuapp.com/",
     },
     {
       title: "Task Manager",
-      description: "Aplicación para gestionar tareas diarias con funcionalidad de arrastrar y soltar.",
-      technologies: ["JavaScript", "HTML", "CSS"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      description: "A website that allows you to create an account and post task so you and fellow employees can track their progress.",
+      technologies: ["JavaScript", "HTML", "CSS", "MySQL", "Sequelize", "Handlebars"],
+      image: "/job-flow.png?height=200&width=350",
+      github: "https://github.com/Bemonn/JobFlow",
+      demo: "https://jobflow-d14d2890d879.herokuapp.com/",
     },
     {
-      title: "Weather App",
+      title: "Weather & Travel App",
       description: "Aplicación que muestra el clima actual y pronóstico utilizando una API externa.",
-      technologies: ["React", "API REST", "Tailwind CSS"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      image: "/weather-travel-app.png?height=200&width=350",
+      github: "https://github.com/Ruihang2017/NavigateUrWeek",
+      demo: "https://shs-peb.github.io/NavigateUrWeek/index.html",
     },
   ]
 
-  const education = [
+  const educationAndWork = [
     {
-      period: "2020 - 2023",
-      title: "Grado en Desarrollo Web",
-      institution: "Universidad Ejemplo",
-      description: "Estudios centrados en desarrollo web, programación y diseño de interfaces.",
+      period: "11/2023 – Present",
+      title: "Software Developer",
+      institution: "Coates Group – Sydney",
+      description: [
+        "Developed computer vision-based applications for real-time analytics and decision-making.",
+        "Led the development of a socket-based rules engine for event-driven automation.",
+        "Built and deployed multiple prototypes as part of a three-person team, taking ownership of key features.",
+        "Expanded expertise in Python, FastAPI, Prisma, AWS S3, and various backend libraries."
+      ]
     },
     {
-      period: "2023",
-      title: "Bootcamp de Desarrollo Frontend",
-      institution: "Academia Código",
-      description: "Formación intensiva en React, JavaScript moderno y desarrollo de aplicaciones web.",
+      period: "05/2023 – 11/2023",
+      title: "Full Stack Web Development (Bootcamp)",
+      institution: "University of Sydney",
+      description: [
+        "Gained hands-on experience with MERN stack (MongoDB, Express, React, Node.js) and SQL-based technologies (MySQL, Sequelize, Handlebars)."
+      ]
     },
     {
-      period: "En curso",
-      title: "Certificación en UX/UI Design",
-      institution: "Plataforma Online",
-      description: "Aprendiendo principios de diseño de experiencia de usuario e interfaces.",
+      period: "04/2022 – 11/2023",
+      title: "Design Engineer",
+      institution: "Coates Group – Sydney",
+      description: [
+        "Developed a backend system for a McDonald’s self-ordering KIOSK prototype using Python and ROS2.",
+        "Conducted research on customer identification models for AI-driven suggestive selling.",
+        "Support the industrial designer with Mechanical engineering experience with FEA."
+      ]
     },
+    {
+      period: "01/2019 – 03/2022",
+      title: "Design Engineer",
+      institution: "Zumtobel Group – Sydney",
+      description: [
+        "Design and develop new families based on the target product specifications within the respect of the New Product Development(NPD) process.",
+        "Design and develop a luminaire base on customer/project requirements.",
+        "Perform all the aspects of the product localisation together with Product Management, Production and Purchasing.",
+        "Work with stakeholders (Sales, Customer Service, Product Management, Suppliers) to assess and understand customer or market requirement to develop a finished product.",
+        "Ensure timely completion of project to support customer delivery schedule or products launch plans.",
+        "Maintains relations with suppliers together with Product Management and Purchasing.",
+        "Product Master Data Maintenance(SAP).",
+        "Enforcement of the Quality Management System of the Company in accordance with ISO9001 requirements.",
+        "Investigation and rectification of quality complaints related to design fault."
+      ]
+    },
+    {
+      period: "04/2018 - 01/2019",
+      title: "CAD Drafter",
+      institution: "MW Toolbox & Trailer PTY LTD - Sydney",
+      description: [
+        "Customise toolboxes, canopies and trailers using 2D(Autocad) & 3D(SOLIDWORKS).",
+        "Nesting and CAM software for sheetmetal cutting.",
+        "Developed a stand-alone application(C#.NET) to partially automate the design process."
+      ]
+    },
+    {
+      period: "06/2016 - 10/2020",
+      title: "Statistician(Part Time)",
+      institution: "John Pyne Skin cancer research centre - Sydney",
+      description: [
+        "Tabulation, statistical analysis of data through the MATLAB and Prism.",
+        "Co-author of the 4 published papers."
+      ]
+    },
+    {
+      period: "04/2017 - 02/2018",
+      title: "Programmer",
+      institution: "BigBossDM PTY LTD - Sydney",
+      description: [
+        "Game Front-end development uses C# and Unity.",
+        "Co-author of the 4 published papers."
+      ]
+    },
+    {
+      period: "11/2015 - 02/2016",
+      title: "Research Internship",
+      institution: "University of New South Wales - Sydney",
+      description: [
+        "Designed and implemented experiments individually which contributed to the overall scope of the project.",
+        "Designed an in vitro model for electrode impedance study due to protein adsorption and tested with Cochlear implants."
+      ]
+    },
+    {
+      period: "11/2014 - 12/2014",
+      title: "Sales Internship",
+      institution: "Xian Janssen Pharmaceutical Ltd – Hangzhou – CHINA",
+      description: [
+        "Designed and implemented experiments individually which contributed to the overall scope of the project.",
+        "Designed an in vitro model for electrode impedance study due to protein adsorption and tested with Cochlear implants."
+      ]
+    },
+    {
+      period: "2012 – 2017",
+      title: "Bachelor (Honours) of Mechatronic/Master of Biomedical Engineering",
+      institution: "University of New South Wales - Sydney",
+      description: [
+        "Achieved high distinction in Solid Mechanics, Thermodynamics and Electronics linear system control.",
+        "Thesis topic: Developed a software that will assist the asset/diagnosis of facial paralysis.",
+        "2016 Secretary(Design), Engineering World Health.",
+        "2014 Secretary(Design), Engineering World Health.",
+        "2015 - Taste of Research Summer Scholarships.",
+        "2012 - Academic Achievement Awards."
+      ]
+    }
   ]
 
   return (
@@ -164,7 +250,9 @@ export default function PortfolioV2() {
             </Button>
 
             <Button className="hidden md:flex bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
-              Contactar
+              <a href="#contact">
+                Contact me
+              </a>
             </Button>
           </div>
         </div>
@@ -225,28 +313,30 @@ export default function PortfolioV2() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button className="bg-gradient-to-r from-teal-500 toF-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
-                  View projects <ArrowRight className="ml-2 h-4 w-4" />
+                  <a href="#projects">
+                    View projects
+                  </a> <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button variant="outline" className="border-gray-300 dark:border-gray-700">
+                  {/* <Button variant="outline" className="border-gray-300 dark:border-gray-700">
                   Download CV
-                  </Button>
+                  </Button> */}
                 </div>
 
                 <div className="mt-12 flex gap-4">
                   <a
-                    href="#"
+                    href="https://github.com/Ruihang2017"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
                     <Github size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/ruihang-horace-hou-b9b73099/"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="#contact"
                     className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
                   >
                     <Mail size={20} />
@@ -264,7 +354,7 @@ export default function PortfolioV2() {
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-teal-500 to-indigo-500 blur-3xl opacity-20 absolute -inset-4"></div>
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-gray-200 dark:border-gray-800 overflow-hidden relative z-10">
                     <img
-                      src="/placeholder.svg?height=400&width=400"
+                      src="/Screenshot 2025-03-16 at 8.15.57 pm.png?height=400&width=400"
                       alt="Tu foto"
                       className="w-full h-full object-cover"
                     />
@@ -412,7 +502,7 @@ export default function PortfolioV2() {
 
             <div className="text-center mt-12">
               <Button variant="outline" className="border-gray-300 dark:border-gray-700">
-                Ver más proyectos
+                View more projects
               </Button>
             </div>
           </div>
@@ -423,14 +513,13 @@ export default function PortfolioV2() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Educación
+                Education
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">Mi formación académica</h2>
-              <p className="text-gray-600 dark:text-gray-300">Mi trayectoria educativa y formación profesional.</p>
+              <h2 className="text-2xl font-bold mb-4">My work experience and educational journey</h2>
             </div>
 
             <div className="max-w-4xl mx-auto">
-              {education.map((item, index) => (
+              {educationAndWork.map((item, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -443,7 +532,7 @@ export default function PortfolioV2() {
                     <div className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 flex items-center justify-center shadow-sm">
                       <div className="w-3 h-3 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500"></div>
                     </div>
-                    {index !== education.length - 1 && (
+                    {index !== educationAndWork.length - 1 && (
                       <div className="w-0.5 h-full bg-gray-200 dark:bg-gray-700 ml-6 mt-2"></div>
                     )}
                   </div>
@@ -455,7 +544,11 @@ export default function PortfolioV2() {
                       </Badge>
                       <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
                       <p className="text-gray-500 dark:text-gray-400 mb-4">{item.institution}</p>
-                      <p className="text-gray-600 dark:text-gray-300">{item.description}</p>
+                      <ul className="list-disc list-inside text-gray-600 dark:text-gray-300">
+                        {item.description.map((point, i) => (
+                          <li key={i}>{point}</li>
+                        ))}
+                      </ul>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -469,21 +562,20 @@ export default function PortfolioV2() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Contacto
+              {/* <a href="#contact"> */}
+                Contact  Me
+              {/* </a> */}
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">¿Hablamos?</h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                ¿Interesado en trabajar juntos o tienes alguna pregunta?
-              </p>
+              <h3 className="text-2xl font-bold mb-4">Interested in working together or have any questions?</h3>
             </div>
 
             <div className="max-w-5xl mx-auto">
               <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden">
                 <div className="grid md:grid-cols-5">
                   <div className="md:col-span-2 bg-gradient-to-br from-teal-500 to-indigo-500 p-8 text-white">
-                    <h3 className="text-2xl font-semibold mb-6">Información de contacto</h3>
+                    <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
                     <p className="mb-8 opacity-90">
-                      Completa el formulario y me pondré en contacto contigo lo antes posible.
+                      Complete the form and I will get in touch with you as soon as possible.
                     </p>
 
                     <div className="space-y-6">
@@ -491,19 +583,19 @@ export default function PortfolioV2() {
                         <div className="p-2 rounded-full bg-white/20">
                           <Mail size={20} />
                         </div>
-                        <span>tunombre@ejemplo.com</span>
+                        <span>ruihang2017@gmail.com</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">
                           <Github size={20} />
                         </div>
-                        <span>github.com/tunombre</span>
+                        <span>https://github.com/Ruihang2017</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="p-2 rounded-full bg-white/20">
                           <Linkedin size={20} />
                         </div>
-                        <span>linkedin.com/in/tunombre</span>
+                        <span>https://www.linkedin.com/in/ruihang-horace-hou-b9b73099/</span>
                       </div>
                     </div>
 
@@ -520,7 +612,7 @@ export default function PortfolioV2() {
                             htmlFor="name"
                             className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
                           >
-                            Nombre
+                            Name
                           </label>
                           <input
                             type="text"
@@ -547,7 +639,7 @@ export default function PortfolioV2() {
                           htmlFor="subject"
                           className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
                         >
-                          Asunto
+                          Subject
                         </label>
                         <input
                           type="text"
@@ -560,7 +652,7 @@ export default function PortfolioV2() {
                           htmlFor="message"
                           className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
                         >
-                          Mensaje
+                          Message
                         </label>
                         <textarea
                           id="message"
@@ -569,7 +661,7 @@ export default function PortfolioV2() {
                         />
                       </div>
                       <Button className="w-full bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
-                        Enviar mensaje
+                        Send message
                       </Button>
                     </form>
                   </div>
@@ -586,17 +678,17 @@ export default function PortfolioV2() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-teal-400 to-indigo-500 flex items-center justify-center text-white font-bold text-xs">
-                TN
+                HH
               </div>
-              <span className="font-bold">TuNombre</span>
+              <span className="font-bold">Horace</span>
             </div>
 
-            <div className="text-gray-500 dark:text-gray-400 text-sm">
-              © {new Date().getFullYear()} TuNombre. Todos los derechos reservados.
+            <div className="text-gray-500 dark:text-gray-400 text-sm text-center">
+              © {new Date().getFullYear()} Horace. All rights reserved.
             </div>
 
             <div className="flex gap-4 mt-4 md:mt-0">
-              <a
+              {/* <a
                 href="#"
                 className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
               >
@@ -613,7 +705,7 @@ export default function PortfolioV2() {
                 className="text-gray-500 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
               >
                 <Mail size={18} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
